@@ -49,7 +49,7 @@ print(f"Current value: {current_value}")
 # getting that money
 new_value = int(input("How many souls do you want?\n"))
 
-# Convert new value to bytes (4 bytes, little-endian)
+# convert it into bytes "little endian" (whatever that means lol)
 new_value_bytes = new_value.to_bytes(4, 'little')
 
 success = write_memory(process_handle, soul_level_pointer, new_value_bytes)
