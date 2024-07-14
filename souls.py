@@ -47,7 +47,7 @@ current_value = int.from_bytes(read_memory(process_handle, soul_level_pointer, 4
 print(f"Current value: {current_value}")
 
 # getting that money
-new_value = 999999999
+new_value = int(input("How many souls do you want?\n"))
 
 # Convert new value to bytes (4 bytes, little-endian)
 new_value_bytes = new_value.to_bytes(4, 'little')
